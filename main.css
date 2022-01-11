@@ -34,6 +34,9 @@ html {
   padding: 10rem 2.5rem;
   margin: 0 auto;
 }
+.container h1 {
+  display: none;
+}
 /* For Large Screens */
 @media (min-width: 767px) {
   body {
@@ -60,7 +63,7 @@ html {
     margin-bottom: 7rem;
     padding: 3rem 4rem 2rem;
   }
-  .container .right-box h1 {
+  .container .right-box p {
     text-align: left;
   }
   .container .right-box .float-bubble {
@@ -124,13 +127,12 @@ html {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.right-box h1 {
+.right-box p {
   color: var(--PaleBlue);
   margin-bottom: 1.5rem;
   text-align: center;
-  font-size: 14px;
 }
-.right-box .info h1,
+.right-box .info p,
 .right-box span {
   font-weight: 700;
 }
@@ -194,10 +196,7 @@ div.progress {
   font-weight: 700;
   color: black;
 }
-footer {
-  margin: 0 auto;
-  width: 350px;
-}
+
 .attribution {
   font-size: 11px;
   text-align: center;
