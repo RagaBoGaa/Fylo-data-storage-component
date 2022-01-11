@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Viga Github Pages](https://ragabogaa.github.io/Fylo-data-storage-component)
+- Solution URL: [Via Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-data-storage-component-solution-DavaDgBL7)
+- Live Site URL: [Via Github Pages](https://ragabogaa.github.io/Fylo-data-storage-component)
 
 ### Built with
 - Semantic HTML 5
