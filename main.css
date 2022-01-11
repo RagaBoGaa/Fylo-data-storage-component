@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+/* Reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Global Rules */
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+/* Variables */
+:root {
+  --Gradient: hsl(6, 100%, 80%);
+  --gradient: hsl(335, 100%, 65%);
+  --PaleBlue: hsl(243, 100%, 93%);
+  --GrayishBlue: hsl(229, 7%, 55%);
+  --DarkBlue: hsl(228, 56%, 26%);
+  --VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/bg-mobile.png) no-repeat;
+  background-size: cover;
+  padding: 10rem 2.5rem;
+  margin: 0 auto;
+}
+/* For Large Screens */
+@media (min-width: 767px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: url(images/bg-desktop.png) no-repeat;
+    background-size: contain;
+    background-color: var(--VeryDarkBlue);
+    background-position: bottom center;
+  }
+  .container .left-box {
+    width: 320px;
+    margin-bottom: 7.5rem;
+  }
+  .container .right-box {
+    width: 50rem;
+    margin: 0;
+    margin-bottom: 7rem;
+    padding: 3rem 4rem 2rem;
+  }
+  .container .right-box p {
+    text-align: left;
+  }
+  .container .right-box .float-bubble {
+    margin: 0;
+    padding: 1rem;
+    transform: translate(5rem, -15.9rem);
+    -webkit-transform: translate(5rem, -15.9rem);
+    -moz-transform: translate(5rem, -15.9rem);
+    -ms-transform: translate(5rem, -15.9rem);
+    -o-transform: translate(5rem, -15.9rem);
+  }
+
+  .container .right-box .float-bubble::after {
+    content: "";
+    position: absolute;
+    border: 13px solid;
+    border-color: transparent transparent transparent #fff;
+    transform: translate(8.3rem, 5.2rem) skew(-30deg, 69deg);
+    overflow: hidden;
+    -webkit-transform: translate(8.3rem, 5.2rem) skew(-30deg, 69deg);
+    -moz-transform: translate(8.3rem, 5.2rem) skew(-30deg, 69deg);
+    -ms-transform: translate(8.3rem, 5.2rem) skew(-30deg, 69deg);
+    -o-transform: translate(8.3rem, 5.2rem) skew(-30deg, 69deg);
+  }
+}
+
+.left-box {
+  background: var(--DarkBlue);
+  padding: 4rem 3.5rem;
+  border-radius: 15px;
+  margin-top: -55px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-top-right-radius: 40%;
+}
+.logo {
+  margin-bottom: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0;
+  width: 70%;
+}
+.icons img {
+  background-color: var(--VeryDarkBlue);
+  display: block;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.right-box {
+  background-color: var(--DarkBlue);
+  margin-top: 1.5rem;
+  padding: 4rem 2rem;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.right-box p {
+  color: var(--PaleBlue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.right-box .info p,
+.right-box span {
+  font-weight: 700;
+}
+
+div.progress {
+  height: 1.5rem;
+  background: var(--VeryDarkBlue);
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.right-box div.progress::before {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #fff;
+  z-index: 9;
+  left: 72%;
+}
+.right-box div.progress::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--Gradient), var(--gradient));
+  border-radius: 10px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.float-bubble {
+  padding: 1.5rem;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  border-radius: 10px;
+  color: var(--PaleBlue);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 16rem;
+}
+
+.float-bubble > div:first-child {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: black;
+}
