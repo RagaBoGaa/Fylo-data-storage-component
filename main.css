@@ -60,7 +60,7 @@ html {
     margin-bottom: 7rem;
     padding: 3rem 4rem 2rem;
   }
-  .container .right-box p {
+  .container .right-box h1 {
     text-align: left;
   }
   .container .right-box .float-bubble {
@@ -196,6 +196,7 @@ div.progress {
 }
 footer {
   margin: 0 auto;
+  width: 350px;
 }
 .attribution {
   font-size: 11px;
