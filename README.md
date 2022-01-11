@@ -31,7 +31,7 @@ Users should be able to:
 - Live Site URL: [Viga Github Pages](https://ragabogaa.github.io/Fylo-data-storage-component)
 
 ### Built with
-
+- Semantic HTML 5
 - Mobile-first workflow
 - Flexbox
 - CSS custom properties
