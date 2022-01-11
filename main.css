@@ -124,12 +124,13 @@ html {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.right-box p {
+.right-box h1 {
   color: var(--PaleBlue);
   margin-bottom: 1.5rem;
   text-align: center;
+  font-size: 14px;
 }
-.right-box .info p,
+.right-box .info h1,
 .right-box span {
   font-weight: 700;
 }
